@@ -18,4 +18,17 @@
     display: inline-block;
     font-weight: $font-weight-light;
   }
+
+  &-logo {
+    margin-bottom: 30px;
+  }
+
+  &-logo img {
+    max-height: 37px;
+  }
+
+  &-bottom {
+    margin-top: 30px;
+    font-size: 12px;
+  }
 }
