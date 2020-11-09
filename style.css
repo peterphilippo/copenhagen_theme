@@ -1548,9 +1548,9 @@ ul {
 @media (min-width: 1024px) {
   .article {
     flex: 1 0 66%;
-    max-width: 66%;
+    max-width: 70%;
     min-width: 640px;
-    padding: 0 30px;
+    padding: 0 30px 0 0;
   }
 }
 
@@ -1722,7 +1722,7 @@ ul {
 @media (min-width: 1024px) {
   .article-sidebar {
     border: 0;
-    flex: 0 0 17%;
+    flex: 0 0 30%;
     height: auto;
   }
 }
