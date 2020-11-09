@@ -192,9 +192,11 @@
 
 .sidenav {
   &-title {
-    font-size: $font-size-base;
+    font-size: $font-size-even-bigger;
     position: relative;
     font-weight: 600;
+    display: block;
+    margin-bottom: 13px;
   }
 
   &-item {
@@ -203,12 +205,12 @@
     display: block;
     font-weight: $font-weight-light;
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 10px 0;
 
     &.current-article,
     &:hover {
-      background-color: $brand_color;
-      color: $brand_text_color;
+/*      background-color: $brand_color; */
+      color: $brand_color;
       text-decoration: none;
     }
   }

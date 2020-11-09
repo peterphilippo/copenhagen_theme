@@ -1799,9 +1799,11 @@ ul {
 }
 
 .sidenav-title {
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
   font-weight: 600;
+  display: block;
+  margin-bottom: 13px;
 }
 
 .sidenav-item {
@@ -1810,12 +1812,12 @@ ul {
   display: block;
   font-weight: 300;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .sidenav-item.current-article, .sidenav-item:hover {
-  background-color: $brand_color;
-  color: $brand_text_color;
+  /*      background-color: $brand_color; */
+  color: $brand_color;
   text-decoration: none;
 }
 
