@@ -1267,6 +1267,14 @@ ul {
   }
 }
 
+.promoted-articles-item-title {
+  font-size: 20px;
+}
+
+.promoted-articles-item-description {
+  font-size: 15px;
+}
+
 .promoted-articles-item:nth-child(3n) {
   padding-right: 0;
 }
