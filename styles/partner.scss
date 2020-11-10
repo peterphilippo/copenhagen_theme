@@ -13,6 +13,8 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 170px;
+    margin: 0 auto;
+    max-width: 1160px;
 
     @include tablet {
       background-image: url($partner-background-image-large);

@@ -9,7 +9,11 @@
   width: 100%;
   margin-bottom: 0 !important;
 
-  &-inner {
+  @include tablet {
+    height: 500px;
+  }
+
+    &-inner {
     @include vertical-align;
     max-width: 610px;
     margin: 0 auto;

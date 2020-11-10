@@ -9,7 +9,6 @@
 }
 
 .home-section h2 {
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -28,6 +27,7 @@
       padding-right: 30px;
       width: 33%; /* Three columns on desktop */
       margin-bottom: 30px;
+      border-radius: 8px;
 
       [dir="rtl"] & { padding: 0 0 0 30px; }
     }
