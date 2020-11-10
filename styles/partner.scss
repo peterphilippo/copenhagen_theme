@@ -7,16 +7,15 @@
   max-width: none;
 
   &-block {
-    background-image: url($partner-background-image-large);
+    background-image: url($partner-background-image-small);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 100px;
 
     @include tablet {
-      background-image: url($partner-background-image-small);
+      background-image: url($partner-background-image-large);
       height: 150px;
     }
-
   }
 }
