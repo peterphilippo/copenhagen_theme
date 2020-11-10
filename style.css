@@ -1175,6 +1175,10 @@ ul {
   color: $text_color;
 }
 
+.blocks-item.contact {
+  flex: 1 0 250px;
+}
+
 .blocks-item-link {
   color: $brand_color;
   padding: 20px 30px;
