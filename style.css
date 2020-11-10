@@ -209,11 +209,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 38px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 35px;
 }
 
 h3 {
@@ -1176,10 +1176,6 @@ ul {
   color: $text_color;
 }
 
-.blocks-item.contact {
-  flex: 1 0 250px;
-}
-
 .blocks-item-link {
   color: $brand_color;
   padding: 20px 30px;
@@ -1269,13 +1265,22 @@ ul {
 }
 
 .promoted-articles-item-title {
-  font-size: 20px;
+  font-size: 18px;
+  color: #1F73B7;
+  display: block;
 }
 
 .promoted-articles-item-description {
   font-size: 15px;
   display: block;
   margin: 10px 0px;
+}
+
+.promoted-articles-item-meta {
+  text-transform: lowercase;
+  color: #666;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .promoted-articles-item:nth-child(3n) {
@@ -1296,6 +1301,7 @@ ul {
 
 .promoted-articles-item .icon-lock {
   vertical-align: baseline;
+  color: #666;
 }
 
 .promoted-articles-item:last-child a {
@@ -4825,4 +4831,5 @@ html[dir="rtl"] .notification-left-aligned {
 .contact-block {
   background-repeat: no-repeat;
   background-position: right top;
+  flex: 1 0 250px;
 }

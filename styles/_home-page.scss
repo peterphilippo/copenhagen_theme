@@ -33,13 +33,22 @@
     }
 
     &-title {
-      font-size: 20px;
+      font-size: $font-size-even-bigger;
+      color: $brand_backup_color;
+      display: block;
     }
 
     &-description {
       font-size: 15px;
       display: block;
       margin: 10px 0px;
+    }
+
+    &-meta {
+      text-transform: lowercase;
+      color: $field-text-color;
+      font-size: $font-size-small;
+      font-weight: 300;
     }
 
 
@@ -63,6 +72,7 @@
 
     .icon-lock {
       vertical-align: baseline;
+      color: $field-text-color;
     }
 
     &:last-child a {
