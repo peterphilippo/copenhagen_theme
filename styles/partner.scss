@@ -1,0 +1,22 @@
+/***** Partner *****/
+/* Used on Homepage */
+.partner {
+  background-color: $border-color;
+  width: 100%;
+  margin: 0;
+  max-width: none;
+
+  &-block {
+    background-image: url($partner-background-image-large);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+
+    @include tablet {
+      background-image: url($partner-background-image-small);
+      height: 150px;
+    }
+
+  }
+}

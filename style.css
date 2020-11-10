@@ -4777,3 +4777,27 @@ html[dir="rtl"] .notification-left-aligned {
   border: 2px solid #2f2f2f !important;
   border-radius: 2px !important;
 }
+
+/***** Partner *****/
+/* Used on Homepage */
+.partner {
+  background-color: #ddd;
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+
+.partner-block {
+  background-image: url("https://www.socialinit.com/hosted/images/fb/473ae001b84e40840acb1ffd058390/gewerkt-met-logos.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+@media (min-width: 768px) {
+  .partner-block {
+    background-image: url("https://www.socialinit.com/hosted/images/db/ff7c54260a4911a5d30a1b38684f0e/gewerkt-met-logos-350.png");
+    height: 150px;
+  }
+}
