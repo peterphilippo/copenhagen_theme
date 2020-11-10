@@ -1285,7 +1285,7 @@ ul {
 .promoted-articles-item a {
   display: block;
   border-bottom: 2px solid $background_color;
-  padding: 15px 0;
+  padding: 15px;
   color: $text_color;
   background-color: #f2f2f2;
 }
@@ -4819,4 +4819,10 @@ html[dir="rtl"] .notification-left-aligned {
     background-size: 100%;
     height: 100px;
   }
+}
+
+/***** Contact *****/
+.contact-block {
+  background-repeat: no-repeat;
+  background-position: right top;
 }
