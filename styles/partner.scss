@@ -8,10 +8,11 @@
 
   &-block {
     background-image: url($partner-background-image-small);
-    background-size: inherit;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 170px;
+    padding: 0 5% !important;
 
     @include tablet {
       background-image: url($partner-background-image-large);
