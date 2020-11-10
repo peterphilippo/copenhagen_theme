@@ -1042,6 +1042,9 @@ ul {
   transform: translateY(-50%);
   max-width: 610px;
   margin: 0 auto;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .page-header {
