@@ -23,10 +23,11 @@
 
   &-item {
     @include desktop {
-      align-self: flex-end;
+      align-self: flex-start;
       flex: 0 0 auto;
       padding-right: 30px;
       width: 33%; /* Three columns on desktop */
+      margin-bottom: 30px;
 
       [dir="rtl"] & { padding: 0 0 0 30px; }
     }
@@ -37,6 +38,8 @@
 
     &-description {
       font-size: 15px;
+      display: block;
+      margin: 10px 0px;
     }
 
 
@@ -48,9 +51,14 @@
 
     a {
       display: block;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 2px solid $background_color;
       padding: 15px 0;
       color: $text_color;
+      background-color: $border-color;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
 
     .icon-lock {

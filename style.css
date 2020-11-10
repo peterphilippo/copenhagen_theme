@@ -1256,11 +1256,12 @@ ul {
 
 @media (min-width: 1024px) {
   .promoted-articles-item {
-    align-self: flex-end;
+    align-self: flex-start;
     flex: 0 0 auto;
     padding-right: 30px;
     width: 33%;
     /* Three columns on desktop */
+    margin-bottom: 30px;
   }
   [dir="rtl"] .promoted-articles-item {
     padding: 0 0 0 30px;
@@ -1273,6 +1274,8 @@ ul {
 
 .promoted-articles-item-description {
   font-size: 15px;
+  display: block;
+  margin: 10px 0px;
 }
 
 .promoted-articles-item:nth-child(3n) {
@@ -1281,9 +1284,14 @@ ul {
 
 .promoted-articles-item a {
   display: block;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 2px solid $background_color;
   padding: 15px 0;
   color: $text_color;
+  background-color: #f2f2f2;
+}
+
+.promoted-articles-item a:hover {
+  text-decoration: none;
 }
 
 .promoted-articles-item .icon-lock {
