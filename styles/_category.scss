@@ -43,9 +43,12 @@
 .article-list {
   &-item {
     font-size: $font-size-bigger;
-    padding: 15px 0;
+    padding: 10px 0;
 
-    a { color: $text_color; }
+    a {
+      color: $text_color;
+      display: block;
+    }
   }
 }
 
