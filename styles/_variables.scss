@@ -16,6 +16,7 @@ $secondary-text-color: zass-lighten($text_color, 20%);
 $primary-shade: zass-darken($background_color, 3%); //#f8f8f8 for the default background_color
 $secondary-shade: zass-darken($background_color, 5%); //#f2f2f2 for the default background_color
 
+$font-size-biggest: 25px;
 $font-size-even-bigger: 18px;
 $font-size-bigger: 16px;
 $font-size-base: 15px;
@@ -24,8 +25,8 @@ $font-size-small: 13px;
 $font-size-smaller: 11px;
 
 $border-color: #f2f2f2;
-
 $button-color: $brand_color;
+$icon-color: #ccc;
 
 $input-font-size: 14px;
 $field-text-color: #666;

@@ -1313,7 +1313,7 @@ ul {
 
 .promoted-articles-item .icon-lock {
   vertical-align: baseline;
-  color: #666;
+  color: #ccc;
 }
 
 .promoted-articles-item:last-child a {
@@ -1495,7 +1495,7 @@ ul {
 
 .section-tree-title {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -1518,8 +1518,20 @@ ul {
   display: block;
 }
 
+.article-list-meta {
+  text-transform: lowercase;
+  color: #666;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.article-list-meta .icon-lock {
+  vertical-align: baseline;
+  color: #ccc;
+}
+
 .icon-star {
-  color: $brand_color;
+  color: #ccc;
   font-size: 18px;
 }
 

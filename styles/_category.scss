@@ -28,7 +28,7 @@
 
   &-title {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: $font-size-biggest;
     font-weight: $font-weight-semibold;
 
     a { color: $text_color; }
@@ -50,9 +50,21 @@
       display: block;
     }
   }
+
+  &-meta {
+    text-transform: lowercase;
+    color: $field-text-color;
+    font-size: $font-size-small;
+    font-weight: 300;
+
+    .icon-lock {
+      vertical-align: baseline;
+      color: $icon-color;
+    }
+  }
 }
 
 .icon-star {
-  color: $brand_color;
+  color: $icon-color;
   font-size: 18px;
 }
