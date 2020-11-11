@@ -1024,7 +1024,7 @@ ul {
   background-position: center;
   background-size: cover;
   height: 300px;
-  padding: 0 20px;
+  padding: 0 5%;
   text-align: center;
   width: 100%;
   margin-bottom: 0 !important;
@@ -1257,17 +1257,18 @@ ul {
 
 .promoted-articles-item {
   flex: 1 0 auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 
 @media (min-width: 1024px) {
   .promoted-articles-item {
     align-self: flex-start;
     flex: 0 0 auto;
+    margin-bottom: 30px;
     padding-right: 30px;
     width: 33%;
     /* Three columns on desktop */
-    margin-bottom: 30px;
-    border-radius: 8px;
   }
   [dir="rtl"] .promoted-articles-item {
     padding: 0 0 0 30px;
@@ -1299,10 +1300,10 @@ ul {
 
 .promoted-articles-item a {
   display: block;
-  border-bottom: 2px solid $background_color;
   padding: 15px;
   color: $text_color;
   background-color: #f2f2f2;
+  border-radius: inherit;
 }
 
 .promoted-articles-item a:hover {
@@ -1463,7 +1464,7 @@ ul {
 
 @media (min-width: 1024px) {
   .category-content {
-    flex: 0 0 80%;
+    /*      flex: 0 0 80%; */
   }
 }
 
@@ -1532,7 +1533,7 @@ ul {
 
 @media (min-width: 1024px) {
   .section-content {
-    flex: 0 0 80%;
+    /*      flex: 0 0 80%; */
   }
 }
 

@@ -21,13 +21,13 @@
   flex-wrap: wrap;
 
   &-item {
+
     @include desktop {
       align-self: flex-start;
       flex: 0 0 auto;
+      margin-bottom: 30px;
       padding-right: 30px;
       width: 33%; /* Three columns on desktop */
-      margin-bottom: 30px;
-      border-radius: 8px;
 
       [dir="rtl"] & { padding: 0 0 0 30px; }
     }
@@ -51,8 +51,9 @@
       font-weight: 300;
     }
 
-
     flex: 1 0 auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
 
     &:nth-child(3n) {
       padding-right: 0;
@@ -60,10 +61,10 @@
 
     a {
       display: block;
-      border-bottom: 2px solid $background_color;
       padding: 15px;
       color: $text_color;
       background-color: $border-color;
+      border-radius: inherit;
     }
 
     a:hover {
