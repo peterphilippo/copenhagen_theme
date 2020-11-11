@@ -106,6 +106,21 @@ textarea {
 
 .container {
   @include max-width-container;
+
+  &-categories {
+    background-color: $border-color;
+    padding: 30px;
+    margin: 30px 0;
+    max-width: none;
+    width: 100%;
+
+    .home-section {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+  }
+
 }
 
 .container-divider {
