@@ -24,12 +24,23 @@
       &-bottom {
         max-width: 610px;
         color: $brand_text_color;
+        transform: none;
+        height: fit-content;
       }
   }
 
   &-bottom {
-    background-image: url(https://facebook.com/business/f/639471173616746);
-    background-position: top;
-    background-repeat: no-repeat;
+    margin-bottom: -60px !important;
+    background-color: $background_dark;
+    background-image: none;
+    height: auto;
+
+    @include tablet {
+      background-image: url(https://facebook.com/business/f/639471173616746);
+      background-position: top;
+      background-repeat: no-repeat;
+      height: 200px;
+    }
+
   }
 }

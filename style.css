@@ -1063,12 +1063,24 @@ ul {
 .hero-inner-bottom {
   max-width: 610px;
   color: $brand_text_color;
+  transform: none;
+  height: fit-content;
 }
 
 .hero-bottom {
-  background-image: url(https://facebook.com/business/f/639471173616746);
-  background-position: top;
-  background-repeat: no-repeat;
+  margin-bottom: -60px !important;
+  background-color: #333;
+  background-image: none;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-bottom {
+    background-image: url(https://facebook.com/business/f/639471173616746);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
 }
 
 .page-header {
