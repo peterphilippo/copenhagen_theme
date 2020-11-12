@@ -215,6 +215,11 @@ h1, h2 {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 0;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 h3 {
@@ -1037,7 +1042,7 @@ ul {
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: auto;
   padding: 0 5%;
   text-align: center;
   width: 100%;
@@ -1046,23 +1051,26 @@ ul {
 
 @media (min-width: 768px) {
   .hero {
-    height: 500px;
+    /*    height: 500px; */
   }
 }
 
+.hero-title {
+  max-width: 610px;
+}
+
+.hero-blocks {
+  max-width: 610px;
+}
+
 .hero-inner {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  /* max-width: 610px; */
-  margin: 0 auto;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  color: $brand_text_color;
+  transform: none;
+  height: fit-content;
+  text-align: left;
 }
 
 .hero-inner-bottom {
-  max-width: 610px;
   color: $brand_text_color;
   transform: none;
   height: fit-content;
@@ -1079,7 +1087,6 @@ ul {
 
 @media (min-width: 768px) {
   .hero-bottom {
-    background-image: url(https://facebook.com/business/f/639471173616746);
     background-position: top;
     background-repeat: no-repeat;
   }

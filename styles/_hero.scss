@@ -3,26 +3,31 @@
   background-image: url($homepage_background_image);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: auto;
   padding: 0 5%;
   text-align: center;
   width: 100%;
   margin-bottom: 0 !important;
 
   @include tablet {
-    height: 500px;
+/*    height: 500px; */
+  }
+
+  &-title {
+    max-width: 610px;
+  }
+
+  &-blocks {
+    max-width: 610px;
   }
 
     &-inner {
-    @include vertical-align;
-    /* max-width: 610px; */
-    margin: 0 auto;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: contain;
+      color: $brand_text_color;
+      transform: none;
+      height: fit-content;
+      text-align: left;
 
       &-bottom {
-        max-width: 610px;
         color: $brand_text_color;
         transform: none;
         height: fit-content;
@@ -38,7 +43,6 @@
     padding: 100px 5%;
 
     @include tablet {
-      background-image: url(https://facebook.com/business/f/639471173616746);
       background-position: top;
       background-repeat: no-repeat;
     }
