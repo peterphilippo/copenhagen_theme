@@ -2,9 +2,9 @@
 
 <header class="header">
   <div class="logo">
-    {{#link 'help_center'}}
+    <a href="https://www.socialinit.com/" title="5 Stappen om je conversie te laten exploderen!">
       <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-    {{/link}}
+    </a>>
   </div>
   <div class="nav-wrapper">
     <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
@@ -13,7 +13,7 @@
       </svg>
     </button>
     <nav class="user-nav" id="user-nav">
-      {{#link 'help_center'}}Home{{/link}}
+      {{#link 'help_center'}}Insights{{/link}}
       {{link 'community'}}
       {{link 'new_request' class='submit-a-request'}}
     </nav>

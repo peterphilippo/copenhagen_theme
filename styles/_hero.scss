@@ -19,6 +19,14 @@
 
   &-blocks {
     max-width: 610px;
+
+    &-item {
+
+      &-link {
+        color: $brand_text_color;
+        font-weight: bold;
+      }
+    }
   }
 
     &-inner {

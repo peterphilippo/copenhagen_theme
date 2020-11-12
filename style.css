@@ -325,6 +325,11 @@ textarea:focus {
   margin: 0 auto;
 }
 
+.arrow-icon {
+  margin: 0 5px 0 0;
+  width: 10px;
+}
+
 .container-divider {
   border-top: 1px solid #f2f2f2;
   margin-bottom: 20px;
@@ -1061,6 +1066,11 @@ ul {
 
 .hero-blocks {
   max-width: 610px;
+}
+
+.hero-blocks-item-link {
+  color: $brand_text_color;
+  font-weight: bold;
 }
 
 .hero-inner {
