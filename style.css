@@ -1043,10 +1043,10 @@ ul {
   background-position: center;
   background-size: cover;
   height: auto;
-  padding: 0 5%;
   text-align: center;
   width: 100%;
   margin-bottom: 0 !important;
+  padding: 100px 5%;
 }
 
 @media (min-width: 768px) {
