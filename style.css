@@ -181,6 +181,7 @@ template {
   display: none;
 }
 
+/* $text_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default; */
 /***** Base *****/
 * {
   box-sizing: border-box;
@@ -189,7 +190,7 @@ template {
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
+  font-family: "Open Sans", sans-serif !important;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -202,18 +203,18 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
+h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif !important;
   font-weight: 400;
   margin-top: 0;
 }
 
-h1 {
+h1, h2 {
   font-size: 38px;
-}
-
-h2 {
-  font-size: 35px;
+  font-family: Oswald, Helvetica, sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 h3 {
@@ -1065,6 +1066,7 @@ ul {
   color: $brand_text_color;
   transform: none;
   height: fit-content;
+  text-align: left;
 }
 
 .hero-bottom {
@@ -1072,6 +1074,7 @@ ul {
   background-color: #333;
   background-image: none;
   height: auto;
+  padding: 100px 5%;
 }
 
 @media (min-width: 768px) {
@@ -1079,7 +1082,6 @@ ul {
     background-image: url(https://facebook.com/business/f/639471173616746);
     background-position: top;
     background-repeat: no-repeat;
-    height: 200px;
   }
 }
 
@@ -2169,7 +2171,7 @@ ul {
   -webkit-hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: $text_font;
+  font-family: "Open Sans", sans-serif !important;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -2452,7 +2454,7 @@ ul {
   content: attr(data-follower-count);
   color: $brand_color;
   display: inline-block;
-  font-family: $heading_font;
+  font-family: "Open Sans", sans-serif !important;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -2720,7 +2722,7 @@ ul {
 }
 
 .post-content {
-  font-family: $text_font;
+  font-family: "Open Sans", sans-serif !important;
   line-height: 1.6;
   word-break: break-word;
 }
