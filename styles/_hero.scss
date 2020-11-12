@@ -15,10 +15,21 @@
 
     &-inner {
     @include vertical-align;
-    max-width: 610px;
+    /* max-width: 610px; */
     margin: 0 auto;
     height: 200px;
     background-repeat: no-repeat;
     background-size: contain;
+
+      &-bottom {
+        max-width: 610px;
+        color: $brand_text_color;
+      }
+  }
+
+  &-bottom {
+    background-image: url(https://facebook.com/business/f/639471173616746);
+    background-position: top;
+    background-repeat: no-repeat;
   }
 }
