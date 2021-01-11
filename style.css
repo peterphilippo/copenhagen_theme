@@ -1795,6 +1795,10 @@ ul {
   text-decoration: underline;
 }
 
+.article-body img {
+  border: 1px solid #ccc;
+}
+
 .article-content {
   line-height: 1.6;
   margin: 40px 0;
