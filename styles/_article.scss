@@ -76,6 +76,10 @@
   &-body {
     @include content-body;
     > p:last-child { margin-bottom: 0; }
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   &-content {
