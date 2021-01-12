@@ -80,6 +80,14 @@
                         <!-- Buiten. Het label is {{ identifier }} -->
                 {{/each}}
 
+                {{#is section.name 'Diensten'}}
+                    <!-- Binnen {{ section.name }}-->
+                {{/is}}
+                {{#isnt section.name 'Diensten'}}
+                    <!-- Buiten {{ section.name }}-->
+                {{/isnt}}
+                <!-- Helemaal buiten {{ section.name }}-->
+
             </div>
 
           <div class="article-attachments">
