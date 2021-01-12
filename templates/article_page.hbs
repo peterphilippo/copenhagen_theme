@@ -69,8 +69,17 @@
                 {{article.body}}
 
                 {{#is article.id 360051641352}}
+                    <!-- Cookie javascript -->
                     <script id="CookieDeclaration" src="https://consent.cookiebot.com/0216001a-f599-4192-9544-edaf6890bb4f/cd.js" type="text/javascript" async></script>
                 {{/is}}
+
+                {{#each article.labels as | label |}}
+                    {{#is label.identifier 'product'}}
+                        <!-- Binnen. Het label is {{ label.identifier }} -->
+                    {{/is}}
+                        <!-- Buiten. Het label is {{ label.identifier }} -->
+                {{/each}}
+
             </div>
 
           <div class="article-attachments">
