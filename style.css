@@ -1799,6 +1799,10 @@ ul {
   border: 1px solid #ccc;
 }
 
+.article-body p {
+  margin-bottom: 40px;
+}
+
 .article-content {
   line-height: 1.6;
   margin: 40px 0;

@@ -167,14 +167,19 @@
         </div>
       </footer>
 
-      <div class="article-relatives">
-        {{#if settings.show_recently_viewed_articles}}
-          {{recent_articles}}
-        {{/if}}
-        {{#if settings.show_related_articles}}
-          {{related_articles}}
-        {{/if}}
-      </div>
+
+        {{#isnt section.name 'Diensten'}}
+            <div class="article-relatives">
+            {{#if settings.show_recently_viewed_articles}}
+              {{recent_articles}}
+            {{/if}}
+            {{#if settings.show_related_articles}}
+              {{related_articles}}
+            {{/if}}
+          </div>
+        {{/isnt}}
+
+    {{#isnt section.name 'Diensten'}}
       {{#if settings.show_article_comments}}
         <div class="article-comments" id="article-comments">
           <section class="comments">
@@ -313,6 +318,7 @@
           </section>
         </div>
       {{/if}}
+    {{/isnt}}
     </article>
 
 
