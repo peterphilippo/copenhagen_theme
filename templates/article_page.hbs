@@ -324,9 +324,21 @@
 
       <aside class="article-sidebar" aria-labelledby="section-articles-title">
         {{#is section.name 'Diensten'}}
-            <a href="https://socialinit.com">
-                <img src="{{asset '360055250091.png'}}" style="width: 100%" />
-            </a>
+            {{#is article.id 360054901892}}
+                <a href="https://socialinit.com/contact-{{ article.id }}">
+                    <img src="{{asset '360054901892.png'}}" style="width: 100%" />
+                </a>
+            {{/is}}
+            {{#is article.id 360055249911}}
+                <a href="https://socialinit.com/contact-{{ article.id }}">
+                    <img src="{{asset '360055249911.png'}}" style="width: 100%" />
+                </a>
+            {{/is}}
+            {{#is article.id 360055250091}}
+                <a href="https://socialinit.com/contact-{{ article.id }}">
+                    <img src="{{asset '360055250091.png'}}" style="width: 100%" />
+                </a>
+            {{/is}}
         {{/is}}
 
           {{#isnt section.name 'Diensten'}}
@@ -373,7 +385,7 @@
 </div>
 
 {{#is section.name 'Diensten'}}
-<section id="" class="section hero hero-bottom" style="background-image: url({{asset 'cover-2.jpg'}})">
+<section id="" class="section hero hero-bottom" style="background-image: url({{asset 'bg-2.jpg'}})">
     <div class="hero-inner hero-inner-bottom">
         <h2 class="hero-title">Meer weten over {{article.title}}?</h2>
         <section class="hero-blocks hero-article">
