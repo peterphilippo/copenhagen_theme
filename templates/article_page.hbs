@@ -1,17 +1,29 @@
+{{#is section.name 'Diensten'}}
+    <section id="main-content" class="section hero">
+        <div class="hero-inner hero-inner-bottom">
+            <h1 class="hero-title">{{article.title}}</h1>
+            <section class="hero-blocks">
+                <p class="hero-description"></p>
+            </section>
+        </div>
+    </section>
+{{/is}}
 
-<div class="container-divider"></div>
-<div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    <div class="search-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon">
-        <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-        <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-      </svg>
-      {{search scoped=settings.scoped_kb_search submit=false}}
+{{#isnt section.name 'Diensten'}}
+    <div class="container-divider"></div>
+    <div class="container">
+      <nav class="sub-nav">
+        {{breadcrumbs}}
+        <div class="search-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon">
+            <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
+            <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
+          </svg>
+          {{search scoped=settings.scoped_kb_search submit=false}}
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
+{{/isnt}}
 
 
 <div class="container">
@@ -19,6 +31,8 @@
 
     <article id="main-content" class="article">
       <header class="article-header">
+
+        {{#isnt section.name 'Diensten'}}
         <h1 title="{{article.title}}" class="article-title">
           {{article.title}}
           {{#if article.internal}}
@@ -28,7 +42,9 @@
             </svg>
           {{/if}}
         </h1>
+        {{/isnt}}
 
+        {{#isnt section.name 'Diensten'}}
         <div class="article-author">
           {{#if settings.show_article_author}}
             <div class="avatar article-avatar">
@@ -57,6 +73,7 @@
             </ul>
           </div>
         </div>
+        {{/isnt}}
 
         {{#if settings.show_follow_article}}
           <div class="article-subscribe">{{subscribe}}</div>
@@ -72,22 +89,6 @@
                     <!-- Cookie javascript -->
                     <script id="CookieDeclaration" src="https://consent.cookiebot.com/0216001a-f599-4192-9544-edaf6890bb4f/cd.js" type="text/javascript" async></script>
                 {{/is}}
-
-                {{#each article.labels}}
-                    {{#is identifier 'product'}}
-                        <!-- Binnen. Het label is {{ identifier }} -->
-                    {{/is}}
-                        <!-- Buiten. Het label is {{ identifier }} -->
-                {{/each}}
-
-                {{#is section.name 'Diensten'}}
-                    <!-- Binnen {{ section.name }}-->
-                {{/is}}
-                {{#isnt section.name 'Diensten'}}
-                    <!-- Buiten {{ section.name }}-->
-                {{/isnt}}
-                <!-- Helemaal buiten {{ section.name }}-->
-
             </div>
 
           <div class="article-attachments">
@@ -130,18 +131,22 @@
             {{/if}}
           {{/if}}
         </div>
-        {{#with article}}
-          <div class="article-votes">
-            <span class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</span>
-            <div class="article-votes-controls" role="group" aria-labelledby="article-votes-label">
-              {{vote 'up' role='radio' class='button article-vote article-vote-up' selected_class="button-primary"}}
-              {{vote 'down' role='radio' class='button article-vote article-vote-down' selected_class="button-primary"}}
-            </div>
-            <small class="article-votes-count">
-              {{vote 'label' class='article-vote-label'}}
-            </small>
-          </div>
-        {{/with}}
+
+
+          {{#is section.name 'Dontshowthis'}}
+            {{#with article}}
+              <div class="article-votes">
+                <span class="article-votes-question" id="article-votes-label">{{t 'was_this_article_helpful'}}</span>
+                <div class="article-votes-controls" role="group" aria-labelledby="article-votes-label">
+                  {{vote 'up' role='radio' class='button article-vote article-vote-up' selected_class="button-primary"}}
+                  {{vote 'down' role='radio' class='button article-vote article-vote-down' selected_class="button-primary"}}
+                </div>
+                <small class="article-votes-count">
+                  {{vote 'label' class='article-vote-label'}}
+                </small>
+              </div>
+            {{/with}}
+          {{/is}}
 
         <div class="article-more-questions">
           {{request_callout}}
@@ -306,6 +311,7 @@
 
 
       <aside class="article-sidebar" aria-labelledby="section-articles-title">
+          {{#isnt section.name 'Diensten'}}
           {{#if settings.show_articles_in_section}}
               <div class="collapsible-sidebar">
                   <button type="button" class="collapsible-sidebar-toggle" aria-labelledby="section-articles-title" aria-expanded="false">
@@ -340,7 +346,7 @@
                   </div>
               </div>
           {{/if}}
-
+          {{/isnt}}
 
       </aside>
 
