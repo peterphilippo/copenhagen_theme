@@ -74,7 +74,10 @@
                 {{/is}}
 
                 {{#each article.labels}}
-                        <!-- Buiten. Het label is {{identifier }} -->
+                    {{#is identifier 'product'}}
+                        <!-- Binnen. Het label is {{ identifier }} -->
+                    {{/is}}
+                        <!-- Buiten. Het label is {{ identifier }} -->
                 {{/each}}
 
             </div>
