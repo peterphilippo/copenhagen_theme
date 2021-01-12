@@ -1103,6 +1103,15 @@ ul {
   }
 }
 
+.hero-article .hero-blocks-item-link {
+  color: $brand_text_color;
+  font-weight: bold;
+  border: 1px solid $brand_text_color;
+  padding: 20px;
+  margin: 10px 0;
+  display: inline-block;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;

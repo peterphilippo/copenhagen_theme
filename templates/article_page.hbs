@@ -323,6 +323,12 @@
 
 
       <aside class="article-sidebar" aria-labelledby="section-articles-title">
+        {{#is section.name 'Diensten'}}
+            <a href="https://socialinit.com">
+                <img src="{{asset '360055250091.png'}}" style="width: 100%" />
+            </a>
+        {{/is}}
+
           {{#isnt section.name 'Diensten'}}
           {{#if settings.show_articles_in_section}}
               <div class="collapsible-sidebar">
@@ -369,25 +375,16 @@
 {{#is section.name 'Diensten'}}
 <section id="" class="section hero hero-bottom" style="background-image: url({{asset 'cover-2.jpg'}})">
     <div class="hero-inner hero-inner-bottom">
-        <h2 class="hero-title">Meer weten over {{article.title}}? Neem direct contact op.</h2>
-        <section class="hero-blocks">
+        <h2 class="hero-title">Meer weten over {{article.title}}?</h2>
+        <section class="hero-blocks hero-article">
             <p class="hero-description">
-                Download het gratis rapport dat onthuld hoe de grote websites hun verkoop
-                laten exploderen. Stel je eens voor wat dit voor jou kan betekenen!
+                Heb je een vraag? Neem gerust contact met ons op!
             </p>
-
             <ul class="hero-blocks-list">
                 <li class="hero-blocks-item">
                     <a href="https://www.socialinit.com/" class="hero-blocks-item-link" title="5 Stappen om je conversie te laten exploderen!">
                         <img src="{{asset 'right-arrow.svg'}}" class="arrow-icon">
-                        <span class="hero-blocks-item-title">5 Stappen om je conversie te laten exploderen!</span>
-                    </a>
-                </li>
-
-                <li class="hero-blocks-item">
-                    <a href="https://www.socialinit.com/" class="hero-blocks-item-link" title="Download">
-                        <img src="{{asset 'right-arrow.svg'}}" class="arrow-icon">
-                        <span class="hero-blocks-item-title">Download</span>
+                        <span class="hero-blocks-item-title">Neem contact op</span>
                     </a>
                 </li>
             </ul>
