@@ -4,3 +4,4 @@ node_modules/
 .zat
 .idea/
 .DS_Store
+assets/*.afphoto
