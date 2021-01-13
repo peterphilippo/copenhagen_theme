@@ -1090,7 +1090,7 @@ ul {
 
 .hero-bottom {
   margin-bottom: -60px !important;
-  background-color: #333;
+  background-color: $background_color;
   background-image: none;
   height: auto;
   padding: 100px 5%;
