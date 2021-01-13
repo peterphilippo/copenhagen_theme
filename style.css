@@ -1046,7 +1046,7 @@ ul {
 /***** Hero component *****/
 .hero {
   background-image: url($homepage_background_image);
-  background-position: top;
+  background-position: top right;
   background-size: cover;
   height: auto;
   text-align: center;
