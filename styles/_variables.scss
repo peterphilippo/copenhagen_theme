@@ -6,7 +6,7 @@ $brand_text_color: #fff !default; //Color for text with an accent color backgrou
 $text_color: #333 !default;
 $link_color: #0072ef !default;
 $background_color: #fff !default;
-$footer_background_color: #000 !default;
+$footer_background_color: $background_color !default;
 $background_dark: #333 !default;
 $brand_backup_color: #1F73B7;
 
